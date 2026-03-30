@@ -53,8 +53,10 @@ public class AuthService {
             user.setName(request.name());
         }
         if (request.email() != null && !request.email().isBlank()) {
-            userRepository.findByEmail(request.email().toLowerCase())
-                    .filter(existing -> !existing.getId().equals(user.getId()))
+            String email = request.email().toLowerCase();
+            String userId = user.getId();
+            userRepository.findByEmail(email)
+                    .filter(existing -> !existing.getId().equals(userId))
                     .ifPresent(existing -> { throw new IllegalArgumentException("Email already in use"); });
             user.setEmail(request.email());
         }
