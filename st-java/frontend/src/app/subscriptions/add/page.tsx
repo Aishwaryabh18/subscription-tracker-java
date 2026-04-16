@@ -188,7 +188,7 @@ export default function AddSubscriptionPage() {
                   />
                 </Grid>
 
-                <Grid item xs={12} sm={6}>
+                {/* <Grid item xs={12} sm={6}>
                   <TextField
                     fullWidth
                     select
@@ -199,10 +199,10 @@ export default function AddSubscriptionPage() {
                   >
                     <MenuItem value="INR">INR</MenuItem>
                   </TextField>
-                </Grid>
+                </Grid> */}
 
                 {/* Billing Cycle */}
-                <Grid item xs={12} sm={4}>
+                <Grid item xs={12} sm={6}>
                   <TextField
                     fullWidth
                     select
@@ -220,7 +220,7 @@ export default function AddSubscriptionPage() {
                   </TextField>
                 </Grid>
 
-                <Grid item xs={12} sm={4}>
+                <Grid item xs={12} sm={6}>
                   <TextField
                     fullWidth
                     label="Start Date"
@@ -236,7 +236,7 @@ export default function AddSubscriptionPage() {
                 </Grid>
 
                 {/* Next Billing Date */}
-                <Grid item xs={12} sm={4}>
+                <Grid item xs={12} sm={6}>
                   <TextField
                     fullWidth
                     label="Next Billing Date"
@@ -252,7 +252,7 @@ export default function AddSubscriptionPage() {
                 </Grid>
 
                 {/* Category */}
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={4}>
                   <TextField
                     fullWidth
                     select
@@ -271,7 +271,7 @@ export default function AddSubscriptionPage() {
                 </Grid>
 
                 {/* Payment Method */}
-                <Grid item xs={12} sm={6}>
+                {/* <Grid item xs={12} sm={6}>
                   <TextField
                     fullWidth
                     select
@@ -286,10 +286,10 @@ export default function AddSubscriptionPage() {
                       </MenuItem>
                     ))}
                   </TextField>
-                </Grid>
+                </Grid> */}
 
                 {/* Website */}
-                <Grid item xs={12}>
+                {/* <Grid item xs={12}>
                   <TextField
                     fullWidth
                     label="Website"
@@ -298,10 +298,10 @@ export default function AddSubscriptionPage() {
                     onChange={handleChange}
                     placeholder="https://example.com"
                   />
-                </Grid>
+                </Grid> */}
 
                 {/* Reminder Settings */}
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={4}>
                   <TextField
                     fullWidth
                     select
@@ -320,7 +320,7 @@ export default function AddSubscriptionPage() {
                   </TextField>
                 </Grid>
 
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={4}>
                   <TextField
                     fullWidth
                     label="Reminder Days Before"
@@ -334,7 +334,7 @@ export default function AddSubscriptionPage() {
                 </Grid>
 
                 {/* Notes */}
-                <Grid item xs={12}>
+                {/* <Grid item xs={12}>
                   <TextField
                     fullWidth
                     label="Notes"
@@ -345,7 +345,7 @@ export default function AddSubscriptionPage() {
                     rows={3}
                     placeholder="Any additional notes..."
                   />
-                </Grid>
+                </Grid> */}
 
                 {/* Submit Button */}
                 <Grid item xs={12}>
