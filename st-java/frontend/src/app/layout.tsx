@@ -3,16 +3,22 @@
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "./global.css";
 import { AuthProvider } from "@/context/AuthContext";
 import { Toaster } from "react-hot-toast";
 import ThemeRegistry from "@/components/ThemeRegistry";
+import RegisterSW from "@/components/RegisterSW";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Subscription Tracker",
   description: "Track and manage your subscriptions efficiently",
+  manifest: "/manifest.json"
+};
+
+export const viewport = {
+  themeColor: "#0f172a",
 };
 
 interface RootLayoutProps {
@@ -25,6 +31,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body className={`${inter.className} theme-root`}>
         <ThemeRegistry>
           <AuthProvider>
+            <RegisterSW />
             {children}
             <Toaster
               position="top-right"
